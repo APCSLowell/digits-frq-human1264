@@ -8,6 +8,7 @@ public class Digits
 	public Digits(int num){
 		boolean a = true;
 		int b = num;
+		digitList = new ArrayList();
 		while(a){
 			if(b > 0){
 				digitList.add(0,b%10);
@@ -18,7 +19,7 @@ public class Digits
 
 	public boolean isStrictlyIncreasing()
 	{ 
-		for(int i = 0; i < digitList.size(); i++){
+		for(int i = 0; i < digitList.size()-1; i++){
 			if(digitList.get(i) >= digitList.get(i+1)){return(false);}
 		}
 		return(true);
