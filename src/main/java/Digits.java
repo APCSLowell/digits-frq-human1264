@@ -9,6 +9,10 @@ public class Digits
 		boolean a = true;
 		int b = num;
 		digitList = new ArrayList();
+		if(num == 0){
+    digitList.add(0);
+    a = false;  
+  }
 		while(a){
 			if(b > 0){
 				digitList.add(0,b%10);
