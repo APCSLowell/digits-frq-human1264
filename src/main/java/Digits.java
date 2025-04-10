@@ -5,7 +5,7 @@ public class Digits
 
 	private ArrayList<Integer> digitList;
 
-	public void Digits(int num){
+	public Digits(int num){
 		boolean a = true;
 		int b = num;
 		digitList = new ArrayList();
